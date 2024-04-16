@@ -1,0 +1,258 @@
+/* CSS for ticket booking page  */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+nav {
+    background-image: url('../img/f.jpg');
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+header {
+    background-image: url('../img/headerbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 50px;
+    font-family: Century Gothic, serif;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* CSS for main */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3e78b7;
+    border-radius: 10px;
+}
+
+.flight-booking {
+    background-image: url('flight-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex: 0 0 calc(48% - 10px);
+}
+
+.label-group {
+    flex: 0 0 30%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="radio"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #050b10;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: #86bcf5;
+    color: #050b10;
+}
+
+.trip {
+    display: flex;
+}
+
+#trip_type {
+    display: flex;
+    margin-left: 10px;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex: 0 0 100%;
+    }
+
+    .input-group input {
+        width: 80%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+/* CSS for service */
+
+.service_main_container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.1);
+    background-color: #72c8f0;
+}
+
+.service img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .service {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* CSS for footer */
+
+footer {
+    background-image: url('../img/f.jpg');
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff9900;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    button {
+        width: 80px;
+    }
+}

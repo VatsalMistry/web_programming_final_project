@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go On Trip - Ticket Booking</title>
+    <link rel="icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style5.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./ticket_booking.html">Ticket Booking</a></li>
+            <li><a href="./Reviews.html">Reviews</a></li>
+            <li><a href="./partnership.html">Partnership</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Go On Trip</h1>
+        <strong>Your Ultimate Travel Companion</strong>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="flight-booking">
+                <h2>Flight Ticket Booking</h2>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="from">From:</label>
+                            <input type="text" id="from" name="from" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="to">To:</label>
+                            <input type="text" id="to" name="to" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="departure-date">Departure Date:</label>
+                            <input type="date" id="departure-date" name="departure-date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="return-date">Return Date:</label>
+                            <input type="date" id="return-date" name="return-date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group trip">
+                            <div><label>Trip Type:</label></div>
+                            <div id="trip_type">
+                                <label for="one-way">One Way</label>
+                                <input type="radio" id="one-way" name="trip-type" value="one-way" class="radio-custom"
+                                    checked>
+                                <label for="round-trip">Round Trip</label>
+                                <input type="radio" id="round-trip" name="trip-type" value="round-trip"
+                                    class="radio-custom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="children">Number of Children:</label>
+                            <input type="number" id="children" name="children" min="0" value="0">
+                        </div>
+                        <div class="input-group">
+                            <label for="adults">Number of Adults:</label>
+                            <input type="number" id="adults" name="adults" min="1" value="1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Check for Tickets</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div class="service_main_container">
+            <section class="services">
+                <h2>Our Services</h2>
+                <div class="services-container">
+                    <div class="service">
+                        <img src="../img/icon/icons8-flight-ticket-96.png" alt="flight-ticket">
+                        <h3>Flight Booking</h3>
+                        <p>Travel agencies can help you find and book flights to your desired destinations.</p>
+                    </div>
+                    <div class="service">
+                        <img src="../img/icon/icons8-5-star-hotel-100.png" alt="5-star-hotel">
+                        <h3>Hotel Reservations</h3>
+                        <p>Travel agencies can help you find and book flights to your desired destinations.</p>
+                    </div>
+                    <div class="service">
+                        <img src="../img/icon/icons8-tour-100.png" alt="Tour Packages">
+                        <h3>Tour Packages</h3>
+                        <p>Travel agencies can help you find and book flights to your desired destinations.</p>
+                    </div>
+                    <div class="service">
+                        <img src="../img/icon/icons8-car-rental-100.png" alt="car-rental">
+                        <h3>Car Rental</h3>
+                        <p>Travel agencies can help you find and book flights to your desired destinations.</p>
+                    </div>
+                    <div class="service">
+                        <img src="../img/icon/icons8-travel-insurance-100.png" alt="travel-insurance">
+                        <h3>Travel Insurance</h3>
+                        <p>Travel agencies can help you find and book flights to your desired destinations.</p>
+                    </div>
+                    <div class="service">
+                        <img src="../img/icon/icons8-passport-100.png" alt="Visa Assistance">
+                        <h3>Visa Assistance</h3>
+                        <p>Travel agencies can help you find and book flights to your desired destinations.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        Connect with us:
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+        </ul>
+        &copy; 2024 Go On Trip. All rights reserved.
+    </footer>
+
+    <script src="../js/ticket_booking_form_validation.js"></script>
+</body>
+
+</html>
